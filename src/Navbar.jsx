@@ -24,22 +24,54 @@ import Toolbar from "@mui/material/Toolbar";
 import { Button } from "@mui/material";
 //import LoginPage from "./LoginPage";
 //import SignUp from "./SignUp";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+
 import { useNavigate } from "react-router-dom";
 function Navbar() {
   const navigate = useNavigate();
   return (
     <div>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ backgroundColor: "#4B0082" }}>
         <Toolbar sx={{ justifyContent: "flex-end" }}>
-          <nav style={{ alignItems: "flex-start" }}>
-            <Link to="/about">About</Link>
-          </nav>
+          <Button
+            onClick={() => navigate("/")}
+            variant="text"
+            type="submit"
+            style={{ color: "white" }}
+          >
+            Home
+          </Button>
+          <Button
+            onClick={() => navigate("freelancing")}
+            variant="text"
+            type="submit"
+            style={{ color: "white" }}
+          >
+            Freelancing
+          </Button>
+          &emsp;
+          <Button
+            onClick={() => navigate("foryou")}
+            variant="text"
+            type="submit"
+            style={{ color: "white" }}
+          >
+            For You
+          </Button>
+          &emsp;
+          <Button
+            onClick={() => navigate("about")}
+            variant="text"
+            type="submit"
+            style={{ color: "white", marginRight: "850px" }}
+          >
+            About
+          </Button>
           &emsp;
           <Button
             onClick={() => navigate("LoginPage")}
             variant="contained"
-            color="primary"
+            color="secondary"
             type="submit"
           >
             Login
@@ -48,7 +80,7 @@ function Navbar() {
           <Button
             onClick={() => navigate("SignUp")}
             variant="contained"
-            color="primary"
+            color="secondary"
             type="submit"
           >
             SignUp

@@ -1,25 +1,29 @@
 // src/App.js
 import React from 'react'
 import {Routes,Route} from "react-router-dom";
-// import HomePage from './HomePage'
+import HomePage from './HomePage'
 import About from './About'
 import Navbar from './Navbar'
-// import SignUp from './SignUp';
-// import LoginPage from './LoginPage';
-// import FindWork from './FindWork';
-
+import SignUp from './SignUp';
+import LoginPage from './LoginPage';
+import FindWork from './FindWork';
+import Freelancing from './Freelancing';
+import Footer from './Footer';
+import ForYou from './ForYou';
 const App = () => {
   return (
     <div>
      <Navbar/>
       <Routes>
-      {/* <Route path="/" element={<HomePage/>}/> */}
+      <Route path="/" element={<HomePage/>}/>
       <Route path="about" element={<About/>}/>
-      {/* <Route path="SignUp" element={<SignUp/>}/>
+      <Route path="SignUp" element={<SignUp/>}/>
       <Route path="LoginPage" element={<LoginPage/>}/>
-      <Route path="Findfreelancer" element={<FindWork/>}/> */}
+      <Route path="Findfreelancer" element={<FindWork/>}/>
+      <Route path="freelancing" element={<Freelancing/>}/>
+      <Route path="foryou" element={<ForYou/>}/>
       </Routes>
-     
+     <Footer/>
     </div>
   )
 }

@@ -5,45 +5,81 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div>
-        <div>
       <nav>
         <Link to="/">
           <b>Back to HomePage</b>
         </Link>
       </nav>
-      </div>
-
-      <div className="about-container">
+      <div
+        style={{
+          //display: "flex",
+          backgroundImage:
+            'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSUepdozuI2CZ98vXt_sG9Z5P8NUFe2YbJNQ&usqp=CAU")',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          color: "white",
+          flexDirection: "row",
+        }}
+      >
         <center>
-      <h2 className="about-contents">About Us</h2>
-      <p>
-        Welcome to our Freelance Finder App, where we connect skilled freelancers with clients
-        looking for their expertise. With over 1000 successful projects completed, we take pride
-        in being a hub for freelance talent and job opportunities.
-      </p>
-      <p>
-        Our platform is designed to make the freelance hiring process seamless. Whether you are
-        a freelancer looking for exciting projects or a client in need of top-notch talent,
-        Freelance Finder App is the place to be.
-      </p></center><center>
-      <img className='about-image-1'src='https://png.pngtree.com/thumb_back/fw800/background/20221129/pngtree-a-corporate-professional-delivers-a-presentation-on-a-fresh-project-photo-image_42450432.jpg' alt=""></img>
+          <h4 style={{ color: "white" }}>Hire your Freelance Designers</h4>
+          &emsp; &emsp; &emsp;{" "}
+          <h5 style={{ color: " white " }}>
+            Find the best freelancers for your next Project
+          </h5>
+        </center>
+        <br></br>
+      </div>
+      <h3>
+        <b> Payment Solutions</b>
+      </h3>
+      Streamline your spending with one team account and payment method to speed
+      up budget approvals and project kickoffs.<br></br>
+      <b>HOW IT WORKS</b>
+      <br></br>
+      &emsp;&emsp;Appoint an organizational Billing Manager<br></br>
+      &emsp;&emsp;Subscribe to freelancers and automate purchases<br></br>
+      &emsp;&emsp;Speed up workflows with one payment method:<br></br>
+      &emsp;&emsp;Pay per Order: Credit Card or Debit<br></br>
+      &emsp;&emsp;Team Balance: Wire, ACH, Credit Card (for US only)<br></br>
+      &emsp;&emsp;Net Terms: Credit Card, Check, Wire, ACH<br></br>
+      <center>
+        {" "}
+        <img
+          style={{ width: "600px", height: "400px" }}
+          src="https://png.pngtree.com/thumb_back/fw800/background/20221129/pngtree-a-corporate-professional-delivers-a-presentation-on-a-fresh-project-photo-image_42450432.jpg"
+          alt=""
+        ></img>
       </center>
-      <h3 className="about-contents">Why Choose Freelance Finder App?</h3>
-      <ul>
-        <li>Access to a diverse pool of talented freelancers.</li>
-        <li>Streamlined project management tools for efficient collaboration.</li>
-        <li>Secure and transparent payment system.</li>
-        <li>Personalized profiles to showcase your skills or find the perfect match.</li>
-        <li>Over 1000 projects completed successfully and counting.</li>
-      </ul>
-      <p className="about-contents">
-        Join us on this journey of connecting talent with opportunity. Whether you're a freelancer
-        looking for your next challenge or a client seeking exceptional skills, Freelance Finder App
-        is here to make it happen.
+      <h3>
+        <b>Talent Lineup</b>
+      </h3>
+      Build a shared pool of freelancers who have earned your team’s trust or
+      interest for quicker connections and ongoing work.
+      <br></br>
+      <b> HOW IT WORKS</b>
+      <br></br>
+      &emsp;&emsp;Save your favorite freelancers for every need<br></br>
+      &emsp;&emsp;Give the whole team a single point of access<br></br>
+      &emsp;&emsp;Instantly contact and manage talent<br></br>
+      <p>
+        We strive to be the premier platform where professionals go to connect,
+        collaborate, and get work done. We believe that the best work is done in
+        a flexible and secure environment. With transparency comes trust, and
+        with a community that's built on meritocracy, people are eager to set
+        aside differences in geography, politics and religion to share and
+        profit from economic opportunities.
       </p>
-      
-    </div>
-
+      <img
+        src="https://res.cloudinary.com/gurucom/image/upload/w_500,f_auto/static/homepage/about-us_2x_zsqk7c.jpg"
+        alt=""
+      ></img>
+      <br></br>
+      We believe in maximizing value and minimizing costs for all of our members
+      so that you have a rewarding experience using the website. Our
+      cost-effective platform provides all the tools and features you need to
+      get work done successfully, while charging you the lowest fees in the
+      freelance marketplace industry.
     </div>
   );
 };
