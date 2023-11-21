@@ -9,6 +9,7 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <div>
+        <br></br>
         <center>
           <h1 style={{ color: "white" }}>Welcome to Freelance finder</h1>
           <h2 style={{ color: "white" }}>
@@ -35,8 +36,8 @@ const HomePage = () => {
           className="find-freelance-button "
           onClick={() => navigate("Findfreelancer")}
           variant="contained"
-          color="primary"
           type="submit"
+          style={{backgroundColor:"deeppink"}}
         >
           Find Freelancers
         </Button>
@@ -109,6 +110,7 @@ const HomePage = () => {
           Freelancer.com has by far the largest pool of quality freelancers
           globally- over 70 million to choose from{" "}
         </p>
+        <br></br>
       </div>
     </div>
   );
