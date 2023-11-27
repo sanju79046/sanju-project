@@ -1,13 +1,8 @@
 import React from "react";
 import AppBar from "@mui/material/AppBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faSnapchat,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
-
-//import Toolbar from "@mui/material/Toolbar";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
   return (
     <div>
@@ -26,19 +21,13 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
-          <FontAwesomeIcon
-            icon={faFacebook}
-            style={{ fontSize: "30px", color: "#1877f2", marginRight: "10px" }}
-          />
-          <FontAwesomeIcon
-            icon={faSnapchat}
-            style={{ fontSize: "30px", color: "#fffc00", marginRight: "10px" }}
-          />
-          <FontAwesomeIcon
-            icon={faInstagram}
-            style={{ fontSize: "30px", color: "#bc2a8d" }}
-          />
+         
+        <FacebookIcon fontSize="large" color="primary" /><br></br>
+        <InstagramIcon fontSize="large" style={{color:'deeppink'}}/>
+        <YouTubeIcon fontSize="large" style={{color:'red'}} />
+
         </div>
+
       </AppBar>
     </div>
   );

@@ -105,3 +105,34 @@
   background-position: center; /* This property centers the background image */
   background-repeat: repeat; /* This property prevents the background image from repeating */
 }
+
+
+ .find-freelance-button {
+  height: 500px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: margin 0.3s, border-radius 0.3s, box-shadow 0.3s, border-color 0.3s, filter 0.3s;
+  position: relative;
+  font-size: 50px;
+}
+
+.find-freelance-button:hover {
+  margin: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-color: black;
+  filter: brightness(50%); /* Fading color effect */
+}
+
+.find-freelance-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border: 2px solid white; /* White border */
+  border-radius: 18px; /* Adjust as needed */
+}
