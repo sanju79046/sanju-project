@@ -44,6 +44,12 @@
       "email": "venkatesh24@gmail.com",
       "password": "sanju",
       "id": 8
+    },
+    {
+      "name": "sneha",
+      "email": "sneha@gmail.com",
+      "password": "sneha1",
+      "id": 9
     }
   ]
 }
